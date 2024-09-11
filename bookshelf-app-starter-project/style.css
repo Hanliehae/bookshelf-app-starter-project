@@ -1,5 +1,138 @@
-.body {
-  background-color: darkslateblue;
-  justify-content: center;
-  justify-content: center;
+header {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 9999;
+  background-color: rgb(167, 175, 223);
+  background: linear-gradient(
+    to top,
+    rgb(76, 73, 110) 0%,
+    rgba(52, 49, 81, 0.751)
+  );
+  backdrop-filter: blur(10px);
+  top: 0;
 }
+
+header h1 {
+  padding-top: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: rgb(76, 73, 110);
+  font-family: "Space-Grotesk";
+  color: aliceblue;
+  margin: auto;
+}
+
+.box {
+  width: 300px;
+  border: 10px solid rgb(244, 224, 224);
+  border-radius: 10px;
+  padding: 5em 10em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Space-Grotesk";
+}
+
+/* TAMBAH BUKU BARU */
+.add-book {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(167, 175, 223);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* cursor: pointer; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  margin: 10px;
+  padding: 50px 50px;
+  color: rgb(44, 57, 67);
+}
+
+#bookFormSubmit {
+  background-color: rgb(56, 64, 113);
+  color: aliceblue;
+}
+
+/* CARI BUKU */
+#searchBook {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  justify-items: center;
+}
+
+.searchBook {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  justify-items: center;
+}
+
+#searchBookTitle {
+  width: 200px;
+  height: 20px;
+  background-color: rgb(167, 175, 223);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease-in-out;
+  margin: 10px;
+  padding: 10px;
+}
+label .searchBookTitle {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+#searchSubmit {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.containerNot {
+  width: 200px;
+  border: 2px solid rgb(244, 224, 224);
+  border-radius: 10px;
+  padding: 50px 80px;
+}
+
+.containerDone {
+  width: 200px;
+  border: 2px solid rgb(244, 224, 224);
+  border-radius: 10px;
+  padding: 50px 80px;
+}
+
+.buttonNot {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonDone {
+  display: flex;
+  flex-direction: row;
+}
+
+/* 
+.containerNot {
+  width: 200px;
+  height: 20px;
+} */
